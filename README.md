@@ -110,3 +110,5 @@ This README includes:
 
 The markdown format makes it easy to display on GitHub/GitLab while maintaining good readability. The Chinese/English mix matches the template's bilingual nature.
 ```
+
+Special Thanks to https://github.com/sci-m-wang/NEU-Thesis
