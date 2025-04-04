@@ -1,0 +1,53 @@
+% !TEX ROOT = ../Thesis.tex
+%---------------------------------------------------------------------------%
+%->> 封面信息及生成
+%---------------------------------------------------------------------------%
+%-
+%-> 中文封面信息
+%-
+\category{}%分类号
+\confidential{}% 密级：只有涉密论文才填写
+\UDC{}
+% \schoollogo% 校徽
+% \schooltitle{width=1cm}{neu_title}
+% comment the below line to enable blind review
+\def\blindreview{}  % define a variable with \def
+
+% If blind review is enabled, redefine the fields to blank
+\ifx\blindreview\empty  % Check if the variable is empty
+  % Default (non-blind review) settings where the original fields are used
+  \title{Leveraging LLMs on languages data to solve the runtime programming hurdles}% 论文中文题目
+  \author{Nouman Ahmad}% 论文作者
+  \advisor{Professor Changsheng Zhang}% 指导教师
+  \englishadvisor{Professor Changsheng Zhang}% 指导教师
+  \advisorsec{Software College, Northeastern University}% 指导老师附加信息
+  \institute{Software College}% 院系名称
+  \research{}% 研究方向
+  \authorno{}% 学号
+  \chinesedate{June 2025}% 封面页脚日期
+  \submissiondate{April. 2025}% 论文提交日期
+  \oraldefencedate{Jun. 2025}% 论文答辩日期
+  \degreedate{Jun. 2025}% 学位授予日期
+  \chairman{}% 答辩委员会主席
+  \reviewer{}% 评阅人
+  \englishadvisor{Professor Changsheng Zhang}% 指导教师
+  \englishmajor{Software Engineering}% 二级学科专业名称
+  \major{Software Engineering}% 二级学科专业名称
+  \englishinstitute{Software College}% 院系名称
+  \englishdate{June 2025}% 毕业日期
+ \englishuniversity{Northeastern University}% 学校名称
+ \degree{Doctor}
+ \degreetype{Large Language Models}
+ 
+
+
+\fi
+
+
+% \makereviewcover % 生成盲审中文封面
+% \makeprintcover %生成打印的中文封面
+\makechinesetitle % 生成中文内容页
+\makeenglishtitle % 生成英文页
+\ifx\blindreview\empty  % Check if the variable is empty
+\makedeclaration % 生成声明页
+\fi
