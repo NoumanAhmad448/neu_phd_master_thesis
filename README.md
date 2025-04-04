@@ -1,4 +1,3 @@
-```markdown
 # Northeastern University (Shenyang) LaTeX Thesis Template
 
 ## Template Structure
