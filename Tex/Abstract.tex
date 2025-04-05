@@ -10,15 +10,9 @@
 \zihao{-4}
 % \setlength{\baselineskip}{20pt}
 
-本研究在AI辅助软件工程领域做出重要贡献，通过开发创新方法增强大语言模型的实际问题解决能力。核心成果是创建了三个基准数据集——DPL\_Issues（深度学习问题库）、DebugEval和JJEval——为评估LLM在真实调试场景中的表现设立了新标准。数据集通过四阶段严格流程构建：自动化爬取活跃GitHub仓库、专家验证StackOverflow讨论、交叉引用框架文档，以及由资深开发人员手动标注。该研究特别针对Java和JavaScript的150个标签、Python \\ 和 PHP的100个标签，以及PyTorch、TensorFlow和Keras的活跃GitHub仓库，最终获得跨四种编程语言和三大深度学习框架的高质量问题-解决方案对。此外还利用了100个Python和PHP活跃仓库以及150个Java和JavaScript仓库中已关闭的issue。
+自己写abstract吧
 
-研究提出了开创性的调试上下文感知 \\（DCA）指标，从五个维度评估LLM：框架特定知识、错误追踪解释、版本兼容性推理、性能优化洞察和跨文件依赖解决。我们的评估框架测试了30个先进模型，包括GPT-4、Claude 3以及DeepSeek-R1和LLamA等开源模型。结果显示基于我们数据集的微调使基线性能提升22-35\%，其中O3-Mini和DeepSeek-R1在Python \\ 和PHP上分别获得92\%和91.5\%的最高DCA分数，这归功于其出色的TensorFlow应用错误链解释能力。研究还发现了一个关键"框架熟悉度阈值"：当模型接触的框架特定示例少于15,000个时，其复杂调试任务表现显著下降。
-
-除基准测试外，本研究提出了一种创新的混合架构，结合检索增强生成与静态代码分析来解决LLM处理项目特定上下文时的局限。我们采用LORA和 \\Unsloth\footnote{\url{http://github.com/unslothai/unsloth}}技术，通过BF16（bfloat16）动态监督计算实现流畅数据处理。该架构在Java中解决跨文件依赖问题的准确率达到89\%，JavaScript中达到88.5\%。其新型注意力机制能动态权衡API文档、社区解决方案和项目历史记录来生成调试建议。
-
-所有数据集和评估框架均以开源许可发布在\footnote{\url{https://huggingface.co/datasets/Eren5717/DPL_issues}}和\footnote{\url{https://github.com/NoumanAhmad448/DebugEval}}。本工作既为开发者提供了实用工具，也为AI辅助软件维护的未来研究奠定了重要基础，特别是在现代软件开发中占主导地位的复杂框架特定调试场景方面。
-
-\keywords{代码调试；代码生成；大语言模型；编程模型；软件工具}% 中文关键词
+\keywords{}% 中文关键词
 %-
 %-> 英文摘要
 %-
@@ -26,15 +20,6 @@
 
 
 \section*{Abstract}
+your abstract goes here
 
-This doctoral research makes significant contributions to the field of AI-assisted software engineering by developing novel methodologies to enhance Large Language Models' practical problem-solving capabilities. At the core of this work lies the creation of three benchmark datasets—DPL\_Issues (Deep Learning Problem Library), DebugEval, and JJEval—which establish new standards for evaluating LLMs in real-world debugging scenarios. The datasets were constructed through a rigorous four-phase process involving automated scraping of active GitHub repositories, expert validation of StackOverflow threads, cross-referencing framework documentation, and manual annotation by senior developers. This process addresses 150 tags on Java and Javascript, 100 tags on Python and PHP, and active Pytorch, Tensorflow and Keras Github reposotories to yield high-quality problem-solution pairs across four programming languages and three major deep learning frameworks, capturing the nuanced challenges developers face in production environments. Furthermore, 100 active Github repostoires on Python and PHP, and 150 repostiroes on Java and Javascript have also been utilized to fetch their only closed issues. 
-
-The study introduces a groundbreaking Debugging Contextual Awareness (DCA) metric that evaluates LLMs across five dimensions: framework-specific knowledge, error trace interpretation, version compatibility reasoning, performance optimization insight, and cross-file dependency resolution. Our evaluation framework tested 30 state-of-the-art models including GPT-4, Claude 3, and open-source alternatives like DeepSeek-R1 and LLamA. The results demonstrate that fine-tuning on our datasets improves baseline performance by 22-35\%, with O3-Mini and DeepSeek-R1 achieving the highest DCA score 92\% and 91.5\% in Python and PHP due to its exceptional ability to interpret error chains in TensorFlow applications. Notably, the research identifies a previously undocumented "framework familiarity threshold" where models with less than 15,000 framework-specific examples show markedly inferior performance on complex debugging tasks.
-
-Beyond benchmarking, this work presents an innovative hybrid architecture that combines retrieval-augmented generation with static code analysis to address limitations of LLMs in handling project-specific contexts. We use LORA and Unsloth \footnote{\url{http://github.com/unslothai/unsloth}} for their smooth data processing by using dynamic supervised compute with BF16 (bfloat16). With this setup, our system achieves 89\% accuracy in resolving cross-file dependency issues in Java and 88.5\% in Javascript. The architecture's novel attention mechanism dynamically weights API documentation, community solutions, and project history when generating debugging suggestions.
-
-All datasets and evalualated frameworks are released under open-source licenses at \footnote{\url{https://huggingface.co/datasets/Eren5717/DPL_issues}} and \footnote{\url{https://github.com/NoumanAhmad448/DebugEval}}. This work provides both immediate practical tools for developers and a long-term foundation for future research in AI-assisted software maintenance, particularly for complex, framework-specific debugging scenarios that dominate modern software development workflows.
-
-
-
-\englishkeywords{Code Debugging; Code Generation; LLMs; Programming Models; Software Tools}
+\englishkeywords{add your keywords here}
