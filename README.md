@@ -24,15 +24,15 @@ Thesis/
 ## Blind Review Configuration
 
 ### Option 1: Global Blind Review
-1. Edit `Thesis.tex`:
+1. Edit `Thesis.tex`: include bibtex for blind review otherwise exlude it.
    ```latex
    \usepackage[bibtex,myhdr,table,list,geometry,blindreview]{Style/artratex}
 
-and replace
+Next find the line
 ```latex
 blindreviewfalse
 ```
-with
+and replace it with
 ```
 blindreviewtrue
 ```
