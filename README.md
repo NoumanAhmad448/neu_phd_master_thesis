@@ -1,4 +1,10 @@
-# Northeastern University (Shenyang) LaTeX Thesis Template
+   <h1 align='center'>
+      Northeastern University (Shenyang) LaTeX Thesis Template
+   </h1>
+<h2 align='center'>
+   Happy writing thesis ! 祝家人们写毕业论文快乐
+</h2>
+
 
 ## Template Structure
 ```
@@ -21,14 +27,15 @@ Thesis/
 1. Edit `Thesis.tex`:
    ```latex
    \usepackage[bibtex,myhdr,table,list,geometry,blindreview]{Style/artratex}
-````
 
-### Option 2: Selective Blind Review
-
-1. Comment/uncomment in `Tex/FrontPages.tex`:
-   ```latex
-   %\def\blindreview{}  % Uncomment to enable blind review
-   ```
+and replace
+```latex
+blindreviewfalse
+```
+with
+```
+blindreviewtrue
+```
 
 ### Custom Blind Review Fields
 
@@ -97,7 +104,7 @@ If content appears incorrectly:
 2. Check for language suffix consistency (\_english* vs \_chinese*)
 3. Ensure blind review conditions are properly nested
 
-Happy thesis writing! 祝您论文顺利！
+Happy writingthesis ! 祝家人们写毕业论文快乐！
 
 ```
 
