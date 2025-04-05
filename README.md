@@ -1,5 +1,5 @@
    <h1 align='center'>
-      Northeastern University (Shenyang) LaTeX Thesis Template
+      Northeastern University (Shenyang) 东大沈阳 LaTeX Thesis 论文 Template
    </h1>
 <h2 align='center'>
    Happy writing thesis ! 祝家人们写毕业论文快乐
@@ -36,7 +36,12 @@ with
 ```
 blindreviewtrue
 ```
+## How to start writing thesis? 
+1. Go to Tex folder and create a folder of your choice. we recommend creating a file name aligned with chapter number. for instance, chapter 1 should be written in chap_1.tex.
+2. If you follow the above mentioned rule, you may create another file called ```Chap_2.tex```in a ```Tex``` folder and add that file in ```Tex/Mainmatter.tex``` file by importing it. For import you may use ```input``` command/function.
+3. Abstract should be in ```Tex/Abstract.tex``` file.
 
+   
 ### Custom Blind Review Fields
 
 To create custom blind review fields:
