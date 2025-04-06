@@ -12,7 +12,7 @@
 % \schooltitle{width=1cm}{neu_title}
 
 % If blind review is enabled, redefine the fields to blank
-\ifx\blindreview  % Check if the variable is empty
+\ifblindreview  % Check if the variable is empty
   % Default (non-blind review) settings where the original fields are used
   \title{abstract title goes here}% 论文中文题目
   \author{Nouman Ahmad}% 论文作者
@@ -46,6 +46,6 @@
 % \makeprintcover %生成打印的中文封面
 \makechinesetitle % 生成中文内容页
 \makeenglishtitle % 生成英文页
-\ifx\blindreview\empty  % Check if the variable is empty
+\ifblindreview  % Check if the variable is empty
 \makedeclaration % 生成声明页
 \fi
