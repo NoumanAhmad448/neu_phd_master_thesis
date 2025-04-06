@@ -42,5 +42,11 @@
 %    \item 项目类型，项目号， 项目名称， 日期。
 %\end{enumerate}
 
+\ifthenelse{\not \boolean{blindreview}}{
+\input{Tex/Awards}
+}
+\input{Tex/ChineseAbstract}
+
+
 \cleardoublepage% 让文档总是结束于偶数页，可根据需要设定页眉页脚样式，如 [noheaderstyle]
 
